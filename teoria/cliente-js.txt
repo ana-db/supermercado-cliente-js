@@ -1,0 +1,10 @@
+24/01/2020
+
+C:\0396\supermercado-cliente-js>json-server --watch db.json
+
+https://webdesign.tutsplus.com/es/tutorials/an-example-of-ajax-with-vanilla-javascript--cms-25763
+
+cors: 
+res.addHeader("Access-Control-Allow-Origin:", "*");
+res.addHeader("Access-Control-Allow-Methods", "GET, POST, DELETE, PUT");
+res.addHeader("Access-Control-Allow-Headers", "Content-Type");
