@@ -7,6 +7,17 @@
     {
       "id": 2,
       "nombre": "leche"
+    },
+    {
+      "id": 3,
+      "nombre": "tortilla"
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
     }
   ],
   "comments": [

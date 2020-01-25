@@ -1,6 +1,10 @@
 24/01/2020
 
-C:\0396\supermercado-cliente-js>json-server --watch db.json
+Crear un API REST con json-server --> https://desarrolloweb.com/articulos/crear-api-rest-json-server.html 
+	- Descargar json-server (si no lo tenemos ya) --> npm install -g json-server
+	- Arrancar el servidor del API REST Fake --> C:\0396\supermercado-cliente-js>json-server --watch db.json
+	- Crear un archivo JSON con los datos de nuestra API --> rellenamos db.json
+	- Acceder al API --> http://localhost:3000
 
 https://webdesign.tutsplus.com/es/tutorials/an-example-of-ajax-with-vanilla-javascript--cms-25763
 

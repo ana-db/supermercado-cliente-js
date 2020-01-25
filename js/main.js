@@ -6,10 +6,10 @@ let botonEL = document.getElementById('boton');
 let resultadoEL = document.getElementById('resultado');
 
 //registrar evento click para el boton:
-botonEL.addEventListener("click", ()=>{
+botonEL.addEventListener("click", () => {
 
     console.debug('Click boton');
-    if(inputEL.value == ""){
+    if(inputEL.value === ""){
         resultadoEL.innerHTML = 'Escribe algo por favor';
     }else{
 
@@ -26,10 +26,10 @@ botonEL.addEventListener("click", ()=>{
 
             if(xhr.responseState === 4){ // esperamos a completar la peticion
 
-                //convetimos de texto a json:
-                let producto = JSON.parse(xhr.responseText);
-
                 if(xhr.status === 200){
+
+                    //convetimos de texto a json:
+                    let producto = JSON.parse(xhr.responseText);
 
                     //pintamos en texarea
                     //resultadoEL.innerHTML = "id= " + producto.id + " nombre=" + producto.nombre;
@@ -49,9 +49,9 @@ botonEL.addEventListener("click", ()=>{
           xhr.open('Get', `http://localhost:8080/supermercado-rest/producto/${inputEL.value}`);
           xhr.send(); //cuidado es ASINCRONO !!
 
-        resultadoEL.innerHTML = inputEL.value;
+          //resultadoEL.innerHTML = inputEL.value;
+          //resultadoEL.innerHTML = `id= ${producto.id} nombre=${producto.nombre}`;
     }
-
 
 });
 
