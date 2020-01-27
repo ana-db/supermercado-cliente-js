@@ -75,6 +75,7 @@ botonEL.addEventListener("click", () => {
                     document.getElementById('imagen').src = producto.imagen;
                     document.getElementById('descripcion').innerHTML = producto.descripcion;
                     document.getElementById('precio').innerHTML = producto.precio;
+                    document.getElementById('categoria').innerHTML = producto.categoria.nombre;
 
                 }
 
