@@ -30,7 +30,7 @@ function cargarProductos(){
             listaEL.innerHTML = "";  // limpiamos la lista para que no aparezca el "cargando productos" por defecto
 
             for( let p of productos ){   //recorremos la lista y vamos mostrando su contenido             
-                listaEL.innerHTML += `<li class="list-group-item">${p.nombre}</li>`;
+                listaEL.innerHTML += `<li class="list-group-item">${p.id} - ${p.nombre}</li>`;
             }
         }
     }
