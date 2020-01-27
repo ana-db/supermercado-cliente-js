@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Cliente Vanilla JS</title>
 
     <!-- Bootstrap core CSS -->
 	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
@@ -22,25 +22,35 @@
         <p>Endpoint <b id="endpoint"></b></p>
 
         <div class="row">
+
+            <div class="col">
+                <h2>Listado de productos</h2>
+                <ul id="listaProductos" class="list-group">
+                    <li class="list-group-item">Cargando productos...</li>
+                </ul>
+            </div>
+
             <div class="col">
                 <p>Escribe un id para detalle del producto, dejalo vacio si quieres todos</p>
                 <input type="text" id="idProducto" placeholder="id">
-                <button id="boton">Consultar</button>
+                <button id="boton" type="button" class="btn btn-dark">Consultar</button>
 
                 <p>Resultado</p>
                 <textarea id="resultado" cols=30 rows=10></textarea>
-            </div>
+            </div> 
 
             <div class="col">
                 <div class="card" style="width: 18rem;">
                     <img id="imagen" src="https://picsum.photos/300/300" class="card-img-top" alt="imagen producto">
                     <div class="card-body">
                         <h5 class="card-title" id="nombre">Nombre</h5>
+                        <p id="precio" class="card-text">Precio del producto en €</p>
                         <p id="descripcion" class="card-text">Descripcion del producto</p>
                     </div>
                 </div>
-            </div>
-        </div>
+            </div> <!-- fin col -->
+
+        </div> <!-- fin row -->
 
     </main>
 
